@@ -24,7 +24,7 @@ function Sidebar({onbtnClick,open}) {
                 <div className='w-full rounded-full  flex items-center gap-10 md:gap-24 mb-8'>
                   
                   <div className="flex items-center gap-2">
-                    <img src="Chatgpt.jpg" alt="logo" 
+                    <img src="Chatgpt.png" alt="logo" 
                     className='rounded-full shadow-sm  w-9 h-9'
                     />
                     <h1 className='text-md font-semibold text-white'>ChatGPT Lite</h1>

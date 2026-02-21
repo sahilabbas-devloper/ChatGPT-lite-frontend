@@ -99,7 +99,7 @@ function Home() {
                             {/*navbar home section*/}
                             <nav className='w-full p-2 pr-5 bg-gray-900 rounded-b-2xl h-auto flex items-center justify-between gap-2 mb-4'>
                                 <div className='flex gap-2 items-center'>
-                                    <img src="Chatgpt.jpg" alt="logo"
+                                    <img src="Chatgpt.png" alt="logo"
                                         className='rounded-full shadow-sm  w-6 h-6'
                                     />
                                     <h1 className='text-md font-semibold text-white'>ChatGPT Lite</h1>
