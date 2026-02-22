@@ -117,7 +117,7 @@ function Home() {
                                 {hide && (<div className='w-full h-180 flex flex-col gap-1 items-center justify-center'>
                                     <div className='flex justify-center items-center w-full'>
 
-                                        <h1 className='text-2xl md:text-3xl font-semibold'>hello i m <span className=' text-4xl md:text-5xl font-bold  bg-linear-to-r from-pink-600 via-purple-600 to-purple-600  bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(255,100,50,0.2)] animate-text'>Sahil,asistence!</span></h1>
+                                        <h1 className='text-2xl md:text-3xl font-semibold'>hello i m <span className=' text-4xl md:text-5xl font-bold  bg-linear-to-r from-pink-600 via-purple-600 to-purple-600  bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(255,100,50,0.2)] animate-text'>Reeza's,asistence!</span></h1>
                                     </div>
 
                                     <div>
