@@ -76,7 +76,7 @@ function Home() {
 
 
     return (
-        <div className='overflow-y-hidden min-h-screen '>
+        <div className='overflow-y-hidden h-auto '>
             <section className='w-full min-h-screen bg-gray-900'>
                 <div className='flex min-h-screen  '>
 
@@ -117,68 +117,68 @@ function Home() {
                                 {hide && (<div className='w-full h-180 flex flex-col gap-1 items-center justify-center'>
                                     <div className='flex justify-center items-center w-full'>
 
-                                        <h1 className='text-2xl md:text-3xl font-semibold'>hello i m <span className=' text-4xl md:text-5xl font-bold  bg-linear-to-r from-pink-600 via-purple-600 to-purple-600  bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(255,100,50,0.2)] animate-text'>Sahil,Assistent!</span></h1>
+                                        <h1 className='text-[22px] md:text-3xl font-semibold'>hello i m <span className=' text-4xl md:text-5xl font-bold  bg-linear-to-r from-pink-600 via-purple-600 to-purple-600  bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(255,100,50,0.2)] animate-text'>Sahil,Assistent!</span></h1>
                                     </div>
 
                                     <div>
-                                        <p className='text-2xl md:text-3xl font-semibold'>how can i help you?</p>
+                                        <p className='text-[24px] md:text-3xl font-semibold'>how can i help you?</p>
                                     </div>
 
                                     <div className='flex flex-wrap w-full md:w-190 h-auto gap-6 mt-8 md:pl-22 pl-5'>
 
-                                        <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-40 h-12 flex items-center justify-center rounded-4xl'>
+                                        <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-38 h-12 flex items-center justify-center rounded-4xl'>
                                             <div>
                                                 <TbNotes
                                                     className='text-red-500 text-2xl'
                                                 />
                                             </div>
-                                            <h1 className='text-gray-100'>Summarize text</h1>
+                                            <h1 className='text-gray-100 text-sm'>Summarize text</h1>
                                         </div>
 
-                                        <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-40 h-12 flex items-center justify-center rounded-4xl'>
+                                        <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-38 h-12 flex items-center justify-center rounded-4xl'>
                                             <div>
                                                 <AiOutlineCode
                                                     className='text-purple-600 text-2xl'
                                                 />
                                             </div>
-                                            <h1 className='text-gray-100'>Code</h1>
+                                            <h1 className='text-gray-100  text-sm'>Code</h1>
                                         </div>
 
-                                        <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-40 h-12 flex items-center justify-center rounded-4xl'>
+                                        <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-38 h-12 flex items-center justify-center rounded-4xl'>
                                             <div>
                                                 <RiPencilRulerLine
                                                     className='text-blue-600 text-2xl'
                                                 />
                                             </div>
-                                            <h1 className='text-gray-100'>Help me write</h1>
+                                            <h1 className='text-gray-100 text-sm'>Help me write</h1>
                                         </div>
 
 
-                                        <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-40 h-12 flex items-center justify-center rounded-4xl'>
+                                        <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-38 h-12 flex items-center justify-center rounded-4xl'>
                                             <div>
                                                 <HiOutlineLightBulb
                                                     className='text-yellow-500 text-2xl'
                                                 />
                                             </div>
-                                            <h1 className='text-gray-100'>make a plane</h1>
+                                            <h1 className='text-gray-100 text-sm'>make a plane</h1>
                                         </div>
 
-                                        <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-40 h-12 flex items-center justify-center rounded-4xl'>
+                                        <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-38 h-12 flex items-center justify-center rounded-4xl'>
                                             <div>
                                                 <PiGraduationCapFill
                                                     className='text-cyan-300 text-2xl'
                                                 />
                                             </div>
-                                            <h1 className='text-gray-100'>Get advice</h1>
+                                            <h1 className='text-gray-100 text-sm'>Get advice</h1>
                                         </div>
 
-                                        <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-40 h-12 flex items-center justify-center rounded-4xl'>
+                                        <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-38 h-12 flex items-center justify-center rounded-4xl'>
                                             <div>
                                                 <FiEye
                                                     className='text-emerald-500 text-2xl'
                                                 />
                                             </div>
-                                            <h1 className='text-gray-100'>Analyze</h1>
+                                            <h1 className='text-gray-100 text-sm'>Analyze</h1>
                                         </div>
                                     </div>
 
