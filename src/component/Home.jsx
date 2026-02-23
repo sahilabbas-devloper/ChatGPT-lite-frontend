@@ -5,7 +5,7 @@ import { TbNotes } from "react-icons/tb"
 import { RiPencilRulerLine } from "react-icons/ri"
 import { AiOutlineCode } from "react-icons/ai"
 import { PiGraduationCapFill } from "react-icons/pi"
-import { FiEye } from "react-icons/fi"
+import { FiEye ,FiStopCircle } from "react-icons/fi"
 import { HiOutlineLightBulb } from "react-icons/hi"
 import axios from "axios";
 import { ThreeDots } from 'react-loader-spinner'
@@ -76,7 +76,7 @@ function Home() {
 
 
     return (
-        <div className='overflow-y-hidden '>
+        <div className='overflow-y-hidden min-h-screen '>
             <section className='w-full min-h-screen bg-gray-900'>
                 <div className='flex min-h-screen  '>
 
@@ -124,9 +124,9 @@ function Home() {
                                         <p className='text-2xl md:text-3xl font-semibold'>how can i help you?</p>
                                     </div>
 
-                                    <div className='flex flex-wrap w-full md:w-190 h-auto gap-6 mt-8 md:pl-22'>
+                                    <div className='flex flex-wrap w-full md:w-190 h-auto gap-6 mt-8 md:pl-22 pl-5'>
 
-                                        <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-44 h-12 flex items-center justify-center rounded-4xl'>
+                                        <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-40 h-12 flex items-center justify-center rounded-4xl'>
                                             <div>
                                                 <TbNotes
                                                     className='text-red-500 text-2xl'
@@ -135,7 +135,7 @@ function Home() {
                                             <h1 className='text-gray-100'>Summarize text</h1>
                                         </div>
 
-                                        <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-44 h-12 flex items-center justify-center rounded-4xl'>
+                                        <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-40 h-12 flex items-center justify-center rounded-4xl'>
                                             <div>
                                                 <AiOutlineCode
                                                     className='text-purple-600 text-2xl'
@@ -144,7 +144,7 @@ function Home() {
                                             <h1 className='text-gray-100'>Code</h1>
                                         </div>
 
-                                        <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-44 h-12 flex items-center justify-center rounded-4xl'>
+                                        <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-40 h-12 flex items-center justify-center rounded-4xl'>
                                             <div>
                                                 <RiPencilRulerLine
                                                     className='text-blue-600 text-2xl'
@@ -154,7 +154,7 @@ function Home() {
                                         </div>
 
 
-                                        <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-44 h-12 flex items-center justify-center rounded-4xl'>
+                                        <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-40 h-12 flex items-center justify-center rounded-4xl'>
                                             <div>
                                                 <HiOutlineLightBulb
                                                     className='text-yellow-500 text-2xl'
@@ -163,7 +163,7 @@ function Home() {
                                             <h1 className='text-gray-100'>make a plane</h1>
                                         </div>
 
-                                        <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-44 h-12 flex items-center justify-center rounded-4xl'>
+                                        <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-40 h-12 flex items-center justify-center rounded-4xl'>
                                             <div>
                                                 <PiGraduationCapFill
                                                     className='text-cyan-300 text-2xl'
@@ -172,7 +172,7 @@ function Home() {
                                             <h1 className='text-gray-100'>Get advice</h1>
                                         </div>
 
-                                        <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-44 h-12 flex items-center justify-center rounded-4xl'>
+                                        <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-40 h-12 flex items-center justify-center rounded-4xl'>
                                             <div>
                                                 <FiEye
                                                     className='text-emerald-500 text-2xl'
@@ -232,9 +232,14 @@ function Home() {
                                     className='w-170 md:h-14 h-19 p-4 bg-gray-900 border-none outline-none text-white'
                                 />
                                 <div className='w-14 md:h-14 h-19 text-3xl font-bold flex items-center justify-center rounded-tr-2xl md:rounded-r-4xl pr-4  bg-gray-900 text-white'>
-                                    <button
+                                      
+                                             {loading && ( <button
+                                    
+                                        className='bg-white w-10  h-10  text-black rounded-full flex items-center justify-center'> <FiStopCircle className='w-6 h-6' />
+                                        </button>) ||  (   <button
                                         onClick={handel}
-                                        className='bg-white w-9  h-9 p-3 text-black rounded-full flex items-center justify-center'> <IoMdSend className='w-5 h-5' /></button>
+                                        className='bg-white w-10  h-10  text-black rounded-full flex items-center justify-center'> <IoMdSend className='w-5 h-5' />
+                                        </button>) }
                                 </div>
                             </div>
 
