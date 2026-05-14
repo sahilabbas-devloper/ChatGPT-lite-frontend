@@ -19,20 +19,20 @@ function Sidebar({onbtnClick,open}) {
         
 
 
-            <aside className={`flex flex-col w-auto h-full gap-4 bg-gray-900   ${open? "hidden" : "block"} md:block  shadow-white text-white p-5`}>
+            <aside className={`flex flex-col w-80 h-full gap-4 bg-gray-900  z-50 fixed  transition-transform duration-500 ease-in-out  ${open ?  "translate-x-0" : "-translate-x-150"}  md:block  shadow-white text-white p-5`}>
 
-                <div className='w-full rounded-full  flex items-center gap-10 md:gap-24 mb-8'>
+                <div className='w-full rounded-full  flex items-center gap-20 md:gap-24 mb-8'>
                   
                   <div className="flex items-center gap-2">
-                    <img src="Chatgpt.png" alt="logo" 
-                    className='rounded-full shadow-sm  w-9 h-9'
+                    <img src="nexus-icon.png" alt="logo" 
+                    className='rounded-full object-contain shadow-sm  w-9 h-9'
                     />
-                    <h1 className='text-md font-semibold text-white'>ChatGPT Lite</h1>
+                    <h1 className='text-lg font-bold bg-linear-to-r from-pink-600 via-purple-600 to-purple-600  bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(255,100,50,0.2)] animate-text'>N E X U S</h1>
                   </div>
                    
                     <button
-                    onClick={onbtnClick}
-                    className="text-2xl md:hidden"
+                    onClick={() => onbtnClick(!true)}
+                    className="text-2xl"
                     ><RiShareForwardFill/></button>
                 </div>
 
