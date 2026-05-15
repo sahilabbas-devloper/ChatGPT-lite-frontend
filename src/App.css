@@ -8,3 +8,10 @@
   background-size: 200% auto;
   animation: gradientMove 4s linear infinite;
 }
+
+body {
+  background-color: #060606;
+}
+#root{
+  background-color: #060606;
+}
