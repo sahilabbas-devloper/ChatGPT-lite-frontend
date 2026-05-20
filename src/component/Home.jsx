@@ -121,7 +121,9 @@ function Home() {
                                                     className='text-red-500 text-2xl'
                                                 />
                                             </div>
-                                            <h1 className='text-gray-100 text-sm'>Summarize text</h1>
+                                            <button 
+                                            onClick={() => setprompt("Summarize text")}
+                                            className='text-gray-100 text-sm'>Summarize text</button>
                                         </div>
 
                                         <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-38 h-12 flex items-center justify-center rounded-4xl'>
@@ -130,7 +132,9 @@ function Home() {
                                                     className='text-purple-600 text-2xl'
                                                 />
                                             </div>
-                                            <h1 className='text-gray-100  text-sm'>Code</h1>
+                                            <button 
+                                            onClick={() => setprompt("code")}
+                                            className='text-gray-100  text-sm'>Code</button>
                                         </div>
 
                                         <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-38 h-12 flex items-center justify-center rounded-4xl'>
@@ -139,7 +143,9 @@ function Home() {
                                                     className='text-blue-600 text-2xl'
                                                 />
                                             </div>
-                                            <h1 className='text-gray-100 text-sm'>Help me write</h1>
+                                           <button 
+                                            onClick={() => setprompt("Help me write")}
+                                            className='text-gray-100  text-sm'>Help me write</button>
                                         </div>
 
 
@@ -149,7 +155,11 @@ function Home() {
                                                     className='text-yellow-500 text-2xl'
                                                 />
                                             </div>
-                                            <h1 className='text-gray-100 text-sm'>make a plane</h1>
+
+                                             <button 
+                                            onClick={() => setprompt("make a plane")}
+                                            className='text-gray-100  text-sm'>make a plane</button>
+                                          
                                         </div>
 
                                         <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-38 h-12 flex items-center justify-center rounded-4xl'>
@@ -158,7 +168,11 @@ function Home() {
                                                     className='text-cyan-300 text-2xl'
                                                 />
                                             </div>
-                                            <h1 className='text-gray-100 text-sm'>Get advice</h1>
+
+                                              <button 
+                                            onClick={() => setprompt("Get advice")}
+                                            className='text-gray-100  text-sm'>Get advice</button>
+                                    
                                         </div>
 
                                         <div className=' gap-2  bg-white/0 backdrop-invert backdrop-opacity-8 w-38 h-12 flex items-center justify-center rounded-4xl'>
@@ -167,7 +181,9 @@ function Home() {
                                                     className='text-emerald-500 text-2xl'
                                                 />
                                             </div>
-                                            <h1 className='text-gray-100 text-sm'>Analyze</h1>
+                                           <button 
+                                            onClick={() => setprompt("Help")}
+                                            className='text-gray-100  text-sm'>Help</button>
                                         </div>
                                     </div>
 

@@ -21,7 +21,7 @@ function Sidebar({onbtnClick,open}) {
 
             <aside className={`flex flex-col w-80 h-full gap-4 bg-gray-900  z-50 fixed  transition-transform duration-500 ease-in-out  ${open ?  "translate-x-0" : "-translate-x-150"}  md:block  shadow-white text-white p-5`}>
 
-                <div className='w-full rounded-full  flex items-center gap-20 md:gap-24 mb-8'>
+                <div className='w-full rounded-full  flex items-center gap-30 md:gap-30 mb-8'>
                   
                   <div className="flex items-center gap-2">
                     <img src="nexus-icon.png" alt="logo" 
@@ -39,21 +39,9 @@ function Sidebar({onbtnClick,open}) {
                 <button 
                 onClick={reload}
                 className='font-semibold text-lg mb-4 flex gap-2 items-center '>  <FaPen/> New chats</button>
-                <div className="flex items-center gap-2 mb-4">
-                    <label htmlFor="" > <FaSearch className="w-5 h-5 "/></label>
-                  <input type="search" name="" id=""
-                  className="p-1"
-                    placeholder=  'Serch chats'
-                />
-                </div>
+               
                 
 
-                <div  className="flex flex-col gap-2">
-                     <a href="https://chatgpt.com/images" className='font-semibold text-lg mb-1 flex items-center gap-2'> <FaImage className="w-6 h-6 "/> image</a>
-                 <a href="https://play.google.com/store/apps/details?id=com.openai.chatgpt&hl=en_IN" className='font-semibold text-lg mb-1 flex items-center gap-2' > <AiFillAppstore className="w-6 h-6 "/> Apps</a>
-                  <a href="https://chatgpt.com/codex" className='font-semibold text-lg mb-4 flex items-center gap-2'> <RiProjectorFill className="w-6 h-6 "/> codex</a>
-                </div>
-               
 
 
                 <div className='flex flex-col mb-25 overflow-y-hidden'>
@@ -65,22 +53,6 @@ function Sidebar({onbtnClick,open}) {
                     </div>
 
                 </div>
-
-
-                    <div className='flex items-center  w-auto rounded-2xl gap-2 mb-4'>
-                        <div>
-                            <img src="https://cdn-icons-png.flaticon.com/512/10813/10813372.png" alt="logo" 
-                            className='rounded-full shadow-sm  w-10 h-10'
-                            />
-                        </div>
-                            <div>
-                           <h1 className='text-md font-semibold text-white'>Guest0.0127</h1>
-                           <h1 className='text-sm  font-semibold text-gray-400'>Free</h1>
-                            </div>
-                       
-                    </div>
-
-                <a href="https://chatgpt.com/c/69994cb2-7494-83a7-b9ec-28eabc2ac928#pricing" className='bg-purple-800 text-white hover:bg-purple-700 flex items-center justify-center rounded-2xl h-10 w-full'>Claim offer</a>
 
             </aside>
 
